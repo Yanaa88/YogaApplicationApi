@@ -1,0 +1,6 @@
+@YogaApplicationApi_HostAddress = http://localhost:5007
+
+GET {{YogaApplicationApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
