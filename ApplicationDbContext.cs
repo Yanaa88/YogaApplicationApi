@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 using YogaApplicationApi.Database;
+using YogaApplicationApi.Models;
 
 namespace YogaApplicationApi
 {
@@ -18,5 +19,7 @@ namespace YogaApplicationApi
             builder.Entity<User>().Property(u => u.Initials).HasMaxLength(5);
             builder.HasDefaultSchema("identity");
         }
+
+        DbSet<RegisterViewModel> Users { get; set; }
     }
 }
