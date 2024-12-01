@@ -8,7 +8,7 @@
 
         public int Duration { get; set; }
                 
-        public string VideoUrl { get; set; } 
+        public string? VideoUrl { get; set; } 
 
     }
 }
